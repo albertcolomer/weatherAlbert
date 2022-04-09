@@ -1,6 +1,6 @@
 # Weather APP
 
-<img align="center" src="/assets/images/normal.png">
+<img align="center" src="https://github.com/albertcolomer/albertcolomer/blob/main/Img/normal.png">
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Angular
