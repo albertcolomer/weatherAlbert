@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card__image">
+    <img src="{{BASE_URL}}/{{weather.weather[0].icon}}@2x.png" [alt]="weather.name">
+    <div class="card__city"> <div>{{weather.name}} , {{weather.sys.country}} </div>
+    <div class="icon">
+      <div class="icon__temp">  🌡️<div class="card__detail">   T<sup>a</sup> : {{weather.main.temp | number:'1.0-0'}}&#8451;</div></div> 
+      <div class="icon__temp">  🚦<div class="card__detail"> Feel : {{weather.main.feels_like| number:'1.0-0'}}&#8451;</div></div>
+    </div>
+
+  </div>
+  <div class="card__main">{{weather.weather[0].description}}</div>
+</div>
+  
+  <div class="card__stats">
+    <div class="card__stat width-33">
+      <div class="card__stat--stat">📈 {{weather.main.pressure}} <sup>hPa</sup></div>
+      <div class="card__stat--name">Pressure</div>
+    </div>
+    <div class="card__stat width-33">
+      <div class="card__stat--stat">💧 {{weather.main.humidity}}<sup>%</sup></div>
+      <div class="card__stat--name">Humidity</div>
+    </div>
+    <div class="card__stat width-33 no-border">
+      <div class="card__stat--stat">🌬️ {{weather.wind.speed}} <sup>m/s</sup></div>
+      <div class="card__stat--name">Wind</div>
+    </div>
+  </div>
+</div>

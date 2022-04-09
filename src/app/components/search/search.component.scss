@@ -1,0 +1,25 @@
+@import 'variables';
+
+.search {
+  margin-top: 10rem;
+  
+
+  &__input {
+    border-bottom: 3px solid rgba(156, 163, 175, 0.44);
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    width: 98%;
+    border-radius: 10px;
+    color: $yellow;
+    background: $filter;//linear-gradient(111deg, #ffffff, #ffffff33);
+    &::placeholder{
+      color: $yellow;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $main-color;
+    }
+  }
+
+}
